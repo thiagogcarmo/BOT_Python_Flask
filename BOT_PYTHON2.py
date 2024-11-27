@@ -2,6 +2,7 @@
 from flask import Flask, request, jsonify
 import subprocess  # Para rodar o programa externo
 
+#implementação de seguranca - separação das credenciais como variáveis de sistema
 import os
 account_sid = os.getenv('TWILIO_SID')
 auth_token = os.getenv('TWILIO_TOKEN')
